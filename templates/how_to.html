@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use - Employee Attrition Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Employee Attrition Prediction</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/prediction">Prediction</a></li>
+                <li><a href="/how_to">How To</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="how-to-intro">
+            <h2>How to Use the Employee Attrition Prediction Tool</h2>
+            <p>This tool helps HR professionals predict employee attrition by analyzing key factors. Simply enter the required details and let our AI do the rest.</p>
+        </section>
+
+        <section class="steps">
+            <div class="step">
+                <img src="static/age_logo.png" alt="Age Icon">
+                <h3>Step 1: Employee Age</h3>
+                <p>Provide the employee’s age to help determine experience level.</p>
+            </div>
+
+            <div class="step">
+                <img src="static/overtime_logo.png" alt="Overtime Icon">
+                <h3>Step 2: Overtime Status</h3>
+                <p>Indicate whether the employee works overtime (Yes/No).</p>
+            </div>
+
+            <div class="step">
+                <img src="static/jobrole_logo.png" alt="Job Role Icon">
+                <h3>Step 3: Job Role</h3>
+                <p>Select the employee’s job role (e.g., Developer, Manager).</p>
+            </div>
+
+            <div class="step">
+                <img src="static/joblevel_logo.png" alt="Job Level Icon">
+                <h3>Step 4: Job Level</h3>
+                <p>Enter the employee’s job level (1-5 based on seniority).</p>
+            </div>
+
+            <div class="step">
+                <img src="static/yearincurrentrole_logo.png" alt="Years in Role Icon">
+                <h3>Step 5: Years in Current Role</h3>
+                <p>Specify how long the employee has been in their current role.</p>
+            </div>
+
+            <div class="step">
+                <img src="static/jobinvolvement_logo.png" alt="Job Involvement Icon">
+                <h3>Step 6: Job Involvement</h3>
+                <p>Rate employee engagement in their role (1-5).</p>
+            </div>
+
+            <div class="step">
+                <img src="static/marital_logo.png" alt="Marital Status Icon">
+                <h3>Step 7: Marital Status</h3>
+                <p>Indicate whether the employee is single, married, or divorced.</p>
+            </div>
+
+            <div class="step">
+                <img src="static/jobsatisfaction_logo.png" alt="Job Satisfaction Icon">
+                <h3>Step 8: Job Satisfaction</h3>
+                <p>Rate the employee’s job satisfaction (1-5).</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Start Predicting Now</h2>
+            <p>Fill out the form with the required employee data and let our AI-powered model provide insights.</p>
+            <a href="/prediction" class="cta-button">Try the Prediction Tool</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Employee Insights. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

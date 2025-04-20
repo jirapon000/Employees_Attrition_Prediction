@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Employee Attrition Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Employee Attrition Prediction</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/prediction">Prediction</a></li>
+                <li><a href="/how_to">How To</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-intro">
+            <h2>About Employee Attrition Prediction</h2>
+            <p>Employee attrition can significantly impact businesses, leading to increased costs and lost productivity. 
+                Our prediction tool helps HR teams analyze patterns and make data-driven decisions to reduce turnover. 
+                By identifying at-risk employees early, organizations can implement proactive retention strategies, improve employee satisfaction, and ultimately reduce recruitment costs.
+                This tool transforms complex machine learning outputs into accessible insights through an interactive interface designed for HR professionals—no technical expertise required.</p>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <p>
+                Our model analyzes key employee data—such as overtime, years in current role, job level, 
+                and more—to predict the likelihood of attrition. This enables HR teams to act early 
+                and implement targeted strategies to retain valuable talent.
+            </p>
+          
+            <!-- New image row -->
+            <div class="image-row">
+              <div class="image-box">
+                <img src="static/overtime_logo.png" alt="Description of Image 1">
+                <p>Overtime</p>
+              </div>
+              <div class="image-box">
+                <img src="static/yearincurrentrole_logo.png" alt="Description of Image 2">
+                <p>Years In Current Role</p>
+              </div>
+              <div class="image-box">
+                <img src="static/joblevel_logo.png" alt="Description of Image 3">
+                <p>Job Level</p>
+              </div>
+            </div>
+          
+            <p>
+                According to our analysis, these factors are among the most predictive of attrition. 
+                They often reflect an employee’s workload, stability, and career progression—critical elements that 
+                influence whether someone stays or leaves. By focusing on these signals, our tool empowers organizations 
+                to make smarter, data-backed HR decisions.
+            </p>
+          </section>
+          
+
+        <section class="why-matter">
+            <h2>Why Employee Attrition Matters</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>30%</h3>
+                    <p>Of employees leave within the first year</p>
+                </div>
+                <div class="stat">
+                    <h3>50%</h3>
+                    <p>Higher turnover in disengaged employees</p>
+                </div>
+                <div class="stat">
+                    <h3>$15,000</h3>
+                    <p>Average cost of replacing an employee</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Try Our Prediction Tool</h2>
+            <p>Use our AI-powered prediction model to gain insights and reduce employee attrition.</p>
+            <a href="/prediction" class="cta-button">Get Started</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Employee Insights. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

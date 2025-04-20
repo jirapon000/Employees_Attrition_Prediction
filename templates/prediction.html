@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Attrition Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Employee Attrition Prediction</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/prediction">Prediction</a></li>
+        <li><a href="/how_to">How To</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Navy Blue Section Above the Form -->
+    <div class="form-header">
+      <img src="static/logo.png" alt="Info" class="header-icon" />
+      <p>Insert Employee Information Below</p>
+    </div>
+
+    <!-- Prediction Form -->
+    <form action="{{ url_for('predict') }}" method="POST">
+      <label>Age:</label>
+      <input type="number" name="age" required />
+
+      <label for="overtime"><strong>Overtime:</strong></label>
+      <select name="overtime" id="overtime" required>
+        <option value="">-- Select --</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label for="job_role"><strong>Job Role:</strong></label>
+      <select name="job_role" id="job_role" required>
+        <option value="">-- Select Job Role --</option>
+        <option value="6">Research Scientist</option>
+        <option value="7">Sales Executive</option>
+        <option value="2">Laboratory Technician</option>
+        <option value="8">Sales Representative</option>
+        <option value="0">Healthcare Representative</option>
+        <option value="1">Human Resources</option>
+        <option value="4">Manufacturing Director</option>
+        <option value="3">Manager</option>
+        <option value="5">Research Director</option>
+      </select>
+
+      <label for="job_level"><strong>Job Level (1-5):</strong></label>
+      <select name="job_level" id="job_level" required>
+        <option value="">-- Select Job Level --</option>
+        <option value="1">1 (Entry Level)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Senior/Executive)</option>
+      </select>
+
+      <label>Years in Current Role:</label>
+      <input type="number" name="years_current_role" required />
+
+      <label for="job_involvement"><strong>Job Involvement (1–4):</strong></label>
+      <select name="job_involvement" id="job_involvement" required>
+        <option value="">-- Select Job Involvement --</option>
+        <option value="1">1 (Low)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4 (High)</option>
+      </select>
+
+      <label for="marital_status"><strong>Marital Status:</strong></label>
+      <select name="marital_status" id="marital_status" required>
+        <option value="">-- Select --</option>
+        <option value="0">Single</option>
+        <option value="1">Married</option>
+        <option value="2">Divorced</option>
+      </select>
+
+      <label for="satisfaction"><strong>Job Satisfaction (1-5):</strong></label>
+      <select name="satisfaction" id="satisfaction" required>
+        <option value="">-- Select --</option>
+        <option value="1">1 (Very Dissatisfied)</option>
+        <option value="2">2 (Little Bit Dissatisfied)</option>
+        <option value="3">3 (Neutral)</option>
+        <option value="4">4 (Satisfied)</option>
+        <option value="5">5 (Very Satisfied)</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Modal Section -->
+    {% if result %}
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Prediction:</h3>
+            <h1>{{ result }}</h1>
+            {% if result == "Likely to Leave" %}
+              <img src="{{ url_for('static', filename='Likely-to-leave.png') }}" alt="Likely to Leave" class="result-img">
+            {% elif result == "Likely to Stay" %}
+              <img src="{{ url_for('static', filename='Likely-to-stay.png') }}" alt="Likely to Stay" class="result-img">
+            {% endif %}
+          </div>       
+    </div>
+    {% endif %}
+  </main>
+
+  <!-- JavaScript to Handle Modal Display & Close -->
+  <script>
+    // Once the page is loaded, check if the modal exists, and if so, display it
+    document.addEventListener("DOMContentLoaded", function(){
+      const modal = document.getElementById("myModal");
+      if (modal) {
+        // Display the modal
+        modal.style.display = "block";
+
+        // Close button logic
+        const closeBtn = modal.querySelector(".close");
+        closeBtn.addEventListener("click", function() {
+          modal.style.display = "none";
+        });
+
+        // Click outside the modal to close
+        window.addEventListener("click", function(event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

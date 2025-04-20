@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attrition Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Employee Attrition Prediction</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/prediction">Prediction</a></li>
+                <li><a href="/how_to">How To</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Image & Introduction -->
+        <section class="hero">
+            <img src="static/Turnover.jpg" alt="HR Analytics">
+            <div class="hero-text">
+                <h2>Predict Employee Turnover with AI</h2>
+                <p>Understanding employee attrition is critical for workforce planning.  
+                   Our AI-powered model helps HR professionals identify patterns and  
+                   reduce turnover by making data-driven decisions.</p>
+                <a href="/prediction" class="cta-button">Try Prediction</a>
+            </div>
+        </section>
+
+        <!-- Key Stats Section -->
+        <section class="stats">
+            <div class="stat">
+                <h3>60%</h3>
+                <p>Average Attrition Rate in Tech Industry</p>
+            </div>
+            <div class="stat">
+                <h3>85%</h3>
+                <p>Of HR Leaders Say Retention is a Top Priority</p>
+            </div>
+            <div class="stat">
+                <h3>50%</h3>
+                <p>Higher Turnover in Employees with Low Engagement</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Employee Insights. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
