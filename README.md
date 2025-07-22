@@ -27,8 +27,6 @@ It aims to support HR professionals in making data-driven retention decisions, i
   - Age
   - Job Role
 
----
-
 ## 📈 Visual Analytics
 
 The project includes **graphical analysis** of attrition-related patterns to uncover underlying trends:
@@ -37,8 +35,6 @@ The project includes **graphical analysis** of attrition-related patterns to unc
 - Age Distribution vs Attrition
 
 These visualizations help stakeholders better understand the behavioral and demographic drivers behind employee turnover.
-
----
 
 ## 🖥️ Web Application Overview
 
@@ -56,8 +52,6 @@ A user-friendly web interface was developed to help HR teams make **real-time at
 - Allows users to **input employee attributes** (e.g., job level, overtime status, years in current role)
 - Returns a **prediction** of whether the employee is likely to stay or leave
 
----
-
 ## 🧪 Dataset
 
 - The dataset was sourced from **Kaggle** and additional open-source contributions on **GitHub**
@@ -70,8 +64,6 @@ A user-friendly web interface was developed to help HR teams make **real-time at
   - Tenure
 
 No sensitive or personally identifiable information is used.
-
----
 
 ## 📁 How to Run the App
 
