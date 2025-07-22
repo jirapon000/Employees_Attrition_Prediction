@@ -1,7 +1,7 @@
 # 👥 Employee Attrition Prediction
 
 This project provides a comprehensive machine learning solution for predicting and analyzing **employee attrition** (i.e., whether an employee will stay or leave).  
-It aims to support HR professionals in making **data-driven retention decisions** and improving overall workforce stability.
+It aims to support HR professionals in making data-driven retention decisions, improving overall workforce stability, and preventing unexpected employee departures by enabling early intervention when warning signs are detected.
 
 ## 🚀 Project Highlights
 
