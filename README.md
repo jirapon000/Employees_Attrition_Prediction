@@ -1,6 +1,91 @@
-# Employees_Attrition_Prediction
-This repository provides a comprehensive solution for predicting and analyzing employee attrition using machine learning. The project utilizes five machine learning models—Logistic Regression, Decision Trees, Random Forest Classifier, Gradient Descent XGBoost Classifier, and Gradient Descent LightGBM Classifier—to predict employee turnover based on key features. Feature importance analysis is conducted using algorithm-based, permutation-based, and SHAP methods to identify the main drivers of attrition, including OverTime, Job Level, Years in Current Role, Age, and Job Role.
+# 👥 Employee Attrition Prediction
 
-The project also includes graphical analysis of attrition trends, such as Job Satisfaction vs Attrition Distribution, Job Involvement vs Attrition Distribution, and Age vs Attrition Distribution, offering visual insights into key patterns that influence turnover. The findings can be leveraged to develop data-driven retention strategies and improve workforce stability.
+This project provides a comprehensive machine learning solution for predicting and analyzing **employee attrition** (i.e., whether an employee will stay or leave).  
+It aims to support HR professionals in making **data-driven retention decisions** and improving overall workforce stability.
 
-A web-based deployment allows HR professionals to make real-time predictions and interventions based on employee attributes, fostering evidence-based management for long-term organizational success.
+## 🚀 Project Highlights
+
+- Trained and evaluated **five machine learning models**:
+  - Logistic Regression
+  - Decision Tree Classifier
+  - Random Forest Classifier
+  - XGBoost Classifier (Gradient Descent)
+  - LightGBM Classifier (Gradient Descent)
+
+- ✅ **Best Performing Model**:  
+  The **Gradient Descent LightGBM Classifier** achieved the highest prediction performance.
+
+- 🔍 **Feature Importance Analysis** conducted using:
+  - Algorithm-based feature importances
+  - Permutation importance
+  - SHAP (SHapley Additive exPlanations)
+
+- 📊 Key influential features include:
+  - OverTime
+  - Job Level
+  - Years in Current Role
+  - Age
+  - Job Role
+
+---
+
+## 📈 Visual Analytics
+
+The project includes **graphical analysis** of attrition-related patterns to uncover underlying trends:
+- Job Satisfaction vs Attrition
+- Job Involvement vs Attrition
+- Age Distribution vs Attrition
+
+These visualizations help stakeholders better understand the behavioral and demographic drivers behind employee turnover.
+
+---
+
+## 🖥️ Web Application Overview
+
+A user-friendly web interface was developed to help HR teams make **real-time attrition predictions**.
+
+### 🏠 Home Page
+- Provides an **overview of the importance of understanding employee attrition**
+- Discusses the **business impact** of high turnover and the value of prediction tools
+
+### 📊 Variables Page
+- Explains the meaning of each input variable used in the prediction model
+- Describes how each feature contributes to the likelihood of attrition
+
+### 🤖 Attrition Prediction Page
+- Allows users to **input employee attributes** (e.g., job level, overtime status, years in current role)
+- Returns a **prediction** of whether the employee is likely to stay or leave
+
+---
+
+## 🧪 Dataset
+
+- The dataset was sourced from **Kaggle** and additional open-source contributions on **GitHub**
+- It includes anonymized records of employee data such as:
+  - Age
+  - Job Role
+  - Job Satisfaction
+  - Work Environment
+  - Overtime
+  - Tenure
+
+No sensitive or personally identifiable information is used.
+
+---
+
+## 📁 How to Run the App
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/Employees_Attrition_Prediction.git
+
+2. **Run the app**
+   ```bash
+   python app.py
+
+3. **Access the app**
+   ```bash
+   http://localhost:5000
+
+
+
