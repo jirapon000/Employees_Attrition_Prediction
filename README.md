@@ -82,10 +82,7 @@ No sensitive or personally identifiable information is used.
 2. **Run the app**
    ```bash
    python app.py
-
+   
 3. **Access the app**
    ```bash
    http://localhost:5000
-
-
-
